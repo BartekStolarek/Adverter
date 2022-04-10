@@ -1,0 +1,11 @@
+export enum Category {
+  AUTOMOTIVE,
+  BOOKS,
+  ELECTRONICS,
+  HEALTH_AND_CARE,
+  HOUSEHOLD,
+  OTHER,
+  FASHION,
+  PET_SUPPLIES,
+  TOYS
+}
