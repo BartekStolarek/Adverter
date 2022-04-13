@@ -1,4 +1,5 @@
 import { Application } from 'https://deno.land/x/oak/mod.ts';
+import { oakCors } from 'https://deno.land/x/cors/mod.ts';
 import router from './routes/routes.ts';
 import customErrorHandler from './middleware/error.handler.ts';
 
@@ -6,6 +7,11 @@ const port: number = 5000;
 const app = new Application();
 
 app.use(customErrorHandler);
+app.use(
+  oakCors({
+    origin: 'http://localhost:8080'
+  }),
+);
 app.use(router.routes());
 app.use(router.allowedMethods());
 
