@@ -31,30 +31,3 @@ body {
 .icon {
 	vertical-align: middle;
 }
-
-.action {
-	padding: 10px;
-	border-radius: 10px;
-	margin-top: 10px;
-	font-weight: bold;
-	border: none;
-}
-
-.shadow {
-	box-shadow: 0px 0px 15px #ddd;
-}
-
-.action:hover,
-.action:focus {
-	cursor: pointer;
-	opacity: 0.8;
-}
-
-.primary {
-	background-color: #6c9eff;
-	color: #fff;
-}
-
-.secondary {
-	background-color: #fff;
-}
