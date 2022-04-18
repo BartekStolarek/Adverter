@@ -26,7 +26,7 @@
 	};
 
 	const updateAdverts = (event) => {
-		adverts = event.detail.adverts.data;
+		adverts = event.detail.adverts;
 	};
 </script>
 
